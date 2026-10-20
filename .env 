@@ -1,0 +1,3 @@
+LLM_API_KEY=your-key-here
+LLM_MODEL=claude-sonnet-5-5
+DATABASE_URL=sqlite:///triage.db

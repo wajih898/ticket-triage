@@ -1,0 +1,33 @@
+[project]
+name = "ticket-triage"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "muhammad wajih", email = "wajih898@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=1.15.0",
+    "fastapi>=0.151.0",
+    "pydantic>=2.14.1",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.0.55",
+    "streamlit>=1.65.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+ticket-triage = "ticket_triage:main"
+
+[build-system]
+requires = ["uv_build>=0.13.3,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=2.4.0",
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]
